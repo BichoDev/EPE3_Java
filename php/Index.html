@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Usuarios</title>
+    <link href="http://localhost/Formulario_basededatos/Bootstrap_CR_JQ/css/Bootstrap.min.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+          <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="menu_dinamico.php" role="button" aria-expanded="false" ">INGRESAR</a>
+            <ul class="dropdown-menu" >
+                <li><a class="dropdown-item" href="menu_dinamico.php"></a></li>
+                <li><a class="dropdown-item" href="menu_dinamico.php">Another action</a></li>
+                <li><a class="dropdown-item" href="menu_dinamico.php">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="menu_dinamico.php">Separated link</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <li>
+            <a class="nav-link" href="#">CONSULTA</a>
+            
+        </li>
+        </li>
+    </ul>
+    </header>
+<br></br>
+<br></br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="acceso_usuario.php" method="post" name="Autentificacion">
+                    <!-- Aquí va tu formulario de ingreso de usuario y contraseña -->
+                    <!-- Ejemplo: -->
+                    <div class="mb-3">
+                        <br></br>
+                        <p><label>Usuario: <input name="usu" type="text"/></label></p>
+                    </div>
+                    <div class="mb-3">
+                        <p><label>Clave:   <input name="psw" type="password"/></label></p>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                </form>
+            </div>
+        </div>
+    </div>
+	
+<script src="http://localhost/Formulario_basededatos/Bootstrap_CR_JQ/js/bootstrap.min.js"></script>
+</body>
+</html>
